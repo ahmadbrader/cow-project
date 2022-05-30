@@ -18,7 +18,7 @@ Manage Users
         <form method="post" action="{{route('admin.product.save')}}">
             @csrf
             <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
+                <label for="exampleInputEmail1">Name / No </label>
                 <input type="text" class="form-control" name="name">
             </div>
             <div class="form-group">
@@ -32,6 +32,10 @@ Manage Users
                   <option value="{{$value->id}}">{{$value->name}}</option>
                   @endforeach
                 </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Descaription</label>
+                <input type="text" class="form-control" name="description">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

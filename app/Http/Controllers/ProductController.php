@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\Type;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+use App\Models\ProductPhoto;
 
 class ProductController extends Controller
 {
@@ -67,5 +68,24 @@ class ProductController extends Controller
      {
          $data = Product::create($request->all());
          return redirect()->route('admin.product');
+     }
+
+     public function detail($id)
+     {
+         $data['product'] = Product::find($id);
+         return view('admin.product.detail', $data);
+     }
+
+     public function addPhoto(Request $request)
+     {
+        $file = $request->file('img');
+        $filename = time().'.'.$file->getClientOriginalExtension();
+        $destination = 'storage/app';
+        $file->move($destination,$filename);
+        ProductPhoto::create([
+            'product_id' => $request->product_id,
+            'img_url' => $destination.'/'.$filename
+        ]);
+        return back();
      }
 }

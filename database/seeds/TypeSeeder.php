@@ -14,6 +14,14 @@ class TypeSeeder extends Seeder
     public function run()
     {
         Type::create([
+            'name' => 'PO'
+        ]);
+        
+        Type::create([
+            'name' => 'Bali'
+        ]);
+
+        Type::create([
             'name' => 'Limosin'
         ]);
 
@@ -32,28 +40,32 @@ class TypeSeeder extends Seeder
         Product::create([
             'name' => 'Yoyoy',
             'weight' => 240,
-            'type_id' => 1
+            'type_id' => 1,
+            'description' => 'Sapi dari amerika'
 
         ]);
 
         Product::create([
             'name' => 'Yoyoy 2',
             'weight' => 260,
-            'type_id' => 1
+            'type_id' => 1,
+            'description' => 'Sapi dari amerika'
 
         ]);
 
         Product::create([
             'name' => 'A',
             'weight' => 210,
-            'type_id' => 2
+            'type_id' => 2,
+            'description' => 'Sapi dari amerika'
 
         ]);
 
         Product::create([
             'name' => 'A 2',
             'weight' => 340,
-            'type_id' => 2
+            'type_id' => 2,
+            'description' => 'Sapi dari amerika'
 
         ]);
     }

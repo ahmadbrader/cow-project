@@ -13,6 +13,8 @@ Route::name('admin.')->prefix('admin')->middleware('auth')->group(function() {
     Route::post('product', 'ProductController@index')->name('product');
     Route::get('product/add', 'ProductController@add')->name('product.add');
     Route::post('product/add/save', 'ProductController@save')->name('product.save');
+    Route::post('product/detail/save/photo', 'ProductController@addPhoto')->name('product.save.photo');
+    Route::get('product/detail/{id}', 'ProductController@detail')->name('product.detail');
 
     Route::get('users/roles', 'UserController@roles')->name('users.roles');
     Route::resource('users', 'UserController', [
