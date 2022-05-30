@@ -1,4 +1,4 @@
-# Stisla Laravel
+# Farm Admin with Stisla Laravel
 Stisla is the most-awesome admin panel I've seen so far. As I love this template very much, I have implemented Stisla in a fresh Laravel 5.8 app. Simply clone this repo and start building your next Laravel project on top of the awesome Stisla. This project makes a very little and basic use of VueJS and compiled JS is already bundled with the project. If you want to make it more dynamic, you can update the Vue components or add your own.
 
 ## Installation
