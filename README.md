@@ -3,9 +3,6 @@ Stisla is the most-awesome admin panel I've seen so far. As I love this template
 
 ## Installation
 Clone the repo:
-```shell
-git clone https://github.com/rehmatworks/stisla-laravel.git
-```
 
 Install composer packages:
 ```shell
@@ -38,16 +35,12 @@ Visit <div style="display: inline">http://yoursite.com/login</div> to sign in us
 URL: https://stisla.rehmat.works
 
 #### Demo Admin Login
-*  Email: admin@example.com
-*  Password: 1234
+*  Email: admin@natieva.com
+*  Password: 123456
 
-#### Demo Editor Login
-*  Email: editor@example.com
-*  Password: 1234
-
-#### Demo User Login
-*  Email: user@example.com
-*  Password: 1234
+#### Reseller Login
+*  Email: reseller@natieva.com
+*  Password: 123456
 
 P.S.: Password modification and user deletion is disabled in demo mode.
 
